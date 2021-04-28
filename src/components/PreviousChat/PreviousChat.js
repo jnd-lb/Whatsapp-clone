@@ -8,7 +8,6 @@ export default function PreviousChat({title,picture, onClick}) {
             <Avatar src={picture}/>
             <div className="previouschat__container__details">
                 <h1>{title}</h1>
-                <p>laset message</p>
             </div>
         </div>
     )

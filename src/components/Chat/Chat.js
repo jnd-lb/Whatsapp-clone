@@ -110,13 +110,14 @@ export default function Chat() {
         <div className={`chat  ${chat?"show":"hide"}`}>
             <div className="chat__header"
             >
+                <div className="chat__header__backicon show">
                 <IconButton
                 onClick={()=>{
                     setChat(null)
-                }}
-                className="chat__header__backicon show">
+                }}>
                     <ArrowBackIcon />
                 </IconButton>
+                </div>
                 <Avatar src={picture} />
                 <div className="chat__header__info">
                     <h2>{recieveName}</h2>
@@ -148,7 +149,7 @@ export default function Chat() {
                 })}
             </div>
 
-            <Footer sendMessage={sendMessage} />
+            <Footer className="chat__footer" sendMessage={sendMessage} />
 
         </div>
     )

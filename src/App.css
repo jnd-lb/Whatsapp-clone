@@ -20,7 +20,7 @@
     height: 100vh;
   }
 
-  .show{
+.show{
     display: flex !important;
 }
 .hide{

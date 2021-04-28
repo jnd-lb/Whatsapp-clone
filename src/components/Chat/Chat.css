@@ -39,7 +39,7 @@
 }
 
 .chat__header__backicon{
-    display: none !important;
+    display: none;
 }
 
 .chat__body{
@@ -52,7 +52,42 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .MuiIconButton-root{
+        padding: 5px !important;
+    }
+    .chat__header__info > p{
+        font-size: clamp(10px,2vw,70px);
+    }
+
+    .chat__footer{
+        position: fixed;
+        bottom: 0;
+    }
+    
+    .chat__header__backicon{
+        display: none;
+    }
+
     .chat{
         flex: 1;
     }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .MuiIconButton-root{
+        padding: 5px !important;
+    }
+
+    .chat__header__info > p{
+        font-size: clamp(10px,2vw,70px);
+    }
+
+  
+    .chat__header__info > h2{
+        font-size: 16px;
+    }
+    .chat{
+        flex: 1;
+    }
+
   }
